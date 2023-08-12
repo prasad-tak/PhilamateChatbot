@@ -13,6 +13,7 @@ import time
 from datetime import date, datetime, timedelta, time
 import mysql.connector
 import concurrent.futures
+from telegram import Bot
 
 
 
@@ -360,6 +361,10 @@ async def error(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 if __name__ == '__main__':
     chat_thread.start()
+    webhook_url = "https://philamate.azurewebsites.net/"
+
+    bot = Bot(token='6472535326:AAGRCql7rCoBOJPVNZ5WkasuS8t_8XDpdRQ')
+    bot.setWebhook(url=webhook_url)
     application = ApplicationBuilder().token('6472535326:AAGRCql7rCoBOJPVNZ5WkasuS8t_8XDpdRQ').build()
     application.add_handler(CallbackQueryHandler(handle_date_button))
     application.add_handler(CommandHandler('start', start))
