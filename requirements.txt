@@ -1,5 +1,3 @@
-threading
-asyncio
 python-telegram-bot
 pandas
 nltk
