@@ -1,5 +1,4 @@
 telegram
-telegram.ext
 nltk
 random
 mysql.connector
