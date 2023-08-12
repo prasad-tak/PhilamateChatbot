@@ -1,0 +1,8 @@
+telegram
+telegram.ext
+nltk
+random
+mysql.connector
+concurrent.futures
+threading
+asyncio
