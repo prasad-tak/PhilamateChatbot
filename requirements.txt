@@ -1,7 +1,6 @@
-telegram
-nltk
-random
-mysql.connector
-concurrent.futures
 threading
 asyncio
+python-telegram-bot
+pandas
+nltk
+mysql-connector-python
